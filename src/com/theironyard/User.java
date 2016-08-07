@@ -13,7 +13,7 @@ class User{
         name = Main.scanner.nextLine();
 
         if (!(Main.account.containsKey(name))) {
-            System.out.println(name + ", It doesn't look like we have an account for you. Would you like to open on today? [y/n]");
+            System.out.println(name + ", would you like to open an account? [y/n]");
             String answer = Main.scanner.nextLine();
             if (answer.equalsIgnoreCase("y")) {
                 Main.account.put(name, 100.00);
