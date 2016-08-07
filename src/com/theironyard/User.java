@@ -55,6 +55,19 @@ if(Main.account.containsKey(name)) {
                              System.out.println("Insufficient funds");}
                     break;
 
+/* NOT SURE IF TRANSFER FUNDS WORKS - 
+case "transfer funds":
+        System.out.println("Amount you would like to transfer:")
+        double amount = Double.valueOf(Main.scanner.nextLine());
+        System.out println("Who would you like too transfer it to?");
+        String reciever = Main.scanner.nextLine();
+//name & receivingAccount
+//accountBalance -= amount;
+//Main.account.put(name, accountBalance);
+//double accountBalance2 = Double.valueOf(Main.account.get(reciever));
+//accountBalance2 += amount;
+//Main.account.put(reciever, accountBalance2);
+*/
                 case "remove account":
                     Main.account.remove(name);
                     System.out.println("Your account has been removed.");
