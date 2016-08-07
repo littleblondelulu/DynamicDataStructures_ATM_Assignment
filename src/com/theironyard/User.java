@@ -24,18 +24,14 @@ class User{
            else {
                System.out.println("Really?");
             }
-
-            }
         }
+    }
 
 /*TEST -- works!
 if(Main.account.containsKey(name)) {
     double accountBalance = Double.valueOf(Main.account.get(name));
     System.out.println("Account balance for " + name + " is: " + accountBalance);
 } */
-
-
-
 
 
     public static String transaction() {
@@ -45,13 +41,13 @@ if(Main.account.containsKey(name)) {
             switch (selection) {
                 case "check balance":
                     accountBalance = Main.account.get(name);
-                    System.out.println("Your balance is $" + Main.account.get(name));
+                    System.out.println("Your balance is $" + accountBalance);
                     break;
 
                 case "withdraw funds":
                     System.out.println("How much would you like to withdraw?");
                     double funds = Double.valueOf(Main.scanner.nextLine());
-                    accountBalance = accountBalance - funds;
+                    accountBalance -= funds;
                         if (funds < accountBalance) {
                              System.out.println("Please take your cash!");
                              System.out.println("Your remaining balance is: $" + accountBalance);}
